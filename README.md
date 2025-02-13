@@ -18,7 +18,7 @@ To run this project
 ```bash
   cd my-project
   npm i
-  npm run deploy
+  npm run dev
 ```
 
 
