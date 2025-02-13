@@ -3,6 +3,7 @@
 
 A chatbot made with google gemini api
 
+![Local Image](Screenshot 2025-02-13 122847.png)
 
 
 
