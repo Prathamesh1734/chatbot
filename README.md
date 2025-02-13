@@ -3,7 +3,7 @@
 
 A chatbot made with google gemini api
 
-![Alt text](/Screenshot 2025-02-13 122847.png?raw=true "Optional Title")
+![App Screenshot](/Screenshot 2025-02-13 122847.png)
 
 
 
