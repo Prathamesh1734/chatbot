@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 
 const Chatbot = () => {
@@ -6,6 +6,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const messagesEndRef = useRef(null);
 
   const API_KEY = "AIzaSyCSPSvPwyShLAHz2HweE5kpQ6CnPYI1ukA";
   const API_URL =
@@ -41,6 +42,10 @@ const Chatbot = () => {
       setIsLoading(false);
     }
   };
+
+  useEffect(() => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [messages]);
 
   return (
     <div className="flex items-center justify-center h-screen w-screen bg-gray-100">
@@ -97,6 +102,7 @@ const Chatbot = () => {
                   </p>
                 </div>
               )}
+              <div ref={messagesEndRef} />
             </div>
 
             <div className="flex items-center pt-2">
