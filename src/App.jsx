@@ -8,7 +8,7 @@ const Chatbot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef(null);
 
-  const API_KEY = "AIzaSyCSPSvPwyShLAHz2HweE5kpQ6CnPYI1ukA";
+  const API_KEY = "YOUR_API_KEY";
   const API_URL =
     "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=" +
     API_KEY;
